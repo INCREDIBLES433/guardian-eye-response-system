@@ -30,8 +30,8 @@ const EmergencyDashboard = () => {
   useEffect(() => {
     const simulateIncident = () => {
       const locations = [
-        'Main St & 5th Ave', 'Highway 101 Mile 23', 'Central Plaza',
-        'Oak Street Bridge', 'Industrial District', 'Downtown Intersection'
+        'MG Road & Brigade Road', 'NH-48 Km 234', 'Connaught Place',
+        'Bandra-Worli Sea Link', 'Industrial Area Phase II', 'Rajiv Chowk Metro Station'
       ];
       
       const severities: Array<'low' | 'medium' | 'high' | 'critical'> = ['low', 'medium', 'high', 'critical'];
@@ -92,9 +92,9 @@ const EmergencyDashboard = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-2">
-              <Camera className="w-8 h-8 text-red-500" />
-              <h1 className="text-3xl font-bold bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent">
-                AI Emergency Response
+              <Camera className="w-8 h-8 text-orange-500" />
+              <h1 className="text-3xl font-bold bg-gradient-to-r from-orange-500 to-green-500 bg-clip-text text-transparent">
+                AI Aapda Pratikriya
               </h1>
             </div>
             <Badge variant="outline" className={`${getStatusColor(systemStatus)} border-current`}>

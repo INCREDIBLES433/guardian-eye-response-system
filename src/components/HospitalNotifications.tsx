@@ -36,30 +36,30 @@ const HospitalNotifications: React.FC<HospitalNotificationsProps> = ({ incidents
   const [hospitals] = useState<Hospital[]>([
     {
       id: 'H1',
-      name: 'City General Hospital',
-      distance: '0.8 mi',
+      name: 'AIIMS Delhi',
+      distance: '0.8 km',
       estimatedTime: '3 min',
       capacity: 'high',
       specialties: ['Emergency', 'Trauma', 'Surgery'],
-      phone: '+1 (555) 123-4567'
+      phone: '+91 11 2658 8500'
     },
     {
       id: 'H2',
-      name: 'Metro Medical Center',
-      distance: '1.2 mi',
+      name: 'Apollo Hospitals',
+      distance: '1.2 km',
       estimatedTime: '4 min',
       capacity: 'medium',
       specialties: ['Emergency', 'Cardiology'],
-      phone: '+1 (555) 234-5678'
+      phone: '+91 44 2829 3333'
     },
     {
       id: 'H3',
-      name: 'Regional Trauma Center',
-      distance: '2.1 mi',
+      name: 'Fortis Hospital',
+      distance: '2.1 km',
       estimatedTime: '6 min',
       capacity: 'high',
       specialties: ['Trauma', 'Surgery', 'ICU'],
-      phone: '+1 (555) 345-6789'
+      phone: '+91 11 4277 6222'
     }
   ]);
 
@@ -175,7 +175,7 @@ const HospitalNotifications: React.FC<HospitalNotificationsProps> = ({ incidents
                   <Button
                     size="sm"
                     onClick={() => sendNotification(hospital.id, activeIncidents[0].id)}
-                    className="bg-red-600 hover:bg-red-700 text-white"
+                    className="bg-green-600 hover:bg-green-700 text-white"
                   >
                     <Send className="w-3 h-3 mr-1" />
                     Notify
@@ -198,7 +198,7 @@ const HospitalNotifications: React.FC<HospitalNotificationsProps> = ({ incidents
           </div>
           <div className="flex justify-between text-sm">
             <span className="text-gray-400">Coverage Radius:</span>
-            <span className="text-purple-400">5 miles</span>
+            <span className="text-purple-400">5 kilometers</span>
           </div>
         </div>
       </CardContent>

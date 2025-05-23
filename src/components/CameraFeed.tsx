@@ -19,12 +19,12 @@ const CameraFeed = () => {
 
   useEffect(() => {
     const initialCameras: CameraData[] = [
-      { id: 'CAM-1', location: 'Main St & 5th Ave', status: 'active' },
-      { id: 'CAM-2', location: 'Highway 101 Mile 23', status: 'alert', lastDetection: new Date(), aiConfidence: 94 },
-      { id: 'CAM-3', location: 'Central Plaza', status: 'active' },
-      { id: 'CAM-4', location: 'Oak Street Bridge', status: 'offline' },
-      { id: 'CAM-5', location: 'Industrial District', status: 'active' },
-      { id: 'CAM-6', location: 'Downtown Intersection', status: 'active' },
+      { id: 'CAM-1', location: 'MG Road & Brigade Road, Bengaluru', status: 'active' },
+      { id: 'CAM-2', location: 'NH-48 Km 234, Delhi-Jaipur Highway', status: 'alert', lastDetection: new Date(), aiConfidence: 94 },
+      { id: 'CAM-3', location: 'Connaught Place, New Delhi', status: 'active' },
+      { id: 'CAM-4', location: 'Bandra-Worli Sea Link, Mumbai', status: 'offline' },
+      { id: 'CAM-5', location: 'Industrial Area Phase II, Chandigarh', status: 'active' },
+      { id: 'CAM-6', location: 'Rajiv Chowk Metro Station, Delhi', status: 'active' },
     ];
     setCameras(initialCameras);
   }, []);
@@ -91,7 +91,7 @@ const CameraFeed = () => {
               key={camera.id}
               variant={selectedCamera === camera.id ? "default" : "outline"}
               className={`h-auto p-3 flex flex-col items-start space-y-2 ${
-                selectedCamera === camera.id ? 'bg-blue-600 hover:bg-blue-700' : 'bg-slate-700 hover:bg-slate-600'
+                selectedCamera === camera.id ? 'bg-orange-600 hover:bg-orange-700' : 'bg-slate-700 hover:bg-slate-600'
               }`}
               onClick={() => setSelectedCamera(camera.id)}
             >
